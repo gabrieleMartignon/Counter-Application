@@ -1,5 +1,5 @@
 # Counter-Application
-Keep Counting!
+Keep Counting! Try it now! https://counter-applicationgm.netlify.app/
 
 ![image](https://github.com/user-attachments/assets/ce9ab5bd-c5fd-4453-9708-ddf1faae55b9)
 
@@ -25,4 +25,5 @@ Counter-Application is a simple application that allows users to keep tracking o
 # Contact
   Email: gabrielemartignon@gmail.com  
   Linkedin: https://www.linkedin.com/in/gabrielemartignon/
+  
 
