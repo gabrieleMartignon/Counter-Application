@@ -1,0 +1,80 @@
+*{
+    overflow: hidden;
+}
+
+
+body{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.increse,.decrease{
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    opacity: 0.25;
+    font-size: 75vh;
+    user-select: none;
+    
+}
+
+.decrease:active,.increse:active{
+    opacity: 0.35;
+}
+
+.decrease{
+    background-color: lightcoral;
+    left: 0;
+    line-height: 87vh;
+}
+
+.increse{
+    right: 0;
+    line-height: 100vh;
+    background-color: lightgreen;
+}
+
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 35vh;
+    font-family: monospace;
+    border: none;
+    background-color: rgb(217, 238, 245);
+    border-radius: 7vh;
+    opacity: 0.8;
+    
+}
+
+.popNumber{
+    position: absolute;
+    user-select: none;
+    transition: transform 400ms ease;
+    font-family: monospace;
+    font-size: 5vh;
+}
+
+.reset{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    translate: -50% 200%;
+    border-radius: 3vh;
+    border: none;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 5vh;
+    background-color: rgb(217, 238, 245);
+}
+
+.reset:active{
+    border: 0.5px solid black;
+    
+}
