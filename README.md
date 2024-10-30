@@ -1,4 +1,4 @@
-# Counter-Appication
+# Counter-Application
 Keep Counting!
 
 ![image](https://github.com/user-attachments/assets/ce9ab5bd-c5fd-4453-9708-ddf1faae55b9)
