@@ -12,7 +12,7 @@ Counter-Application is a simple application that allows users to keep tracking o
   <li>Intuitive Interface: A simple design that makes using the application easy.</li>
   <li>Increment and Decrement: Ability to increase or decrease the count with a single click on either side .</li>
   <li>Reset: Reset the counter to zero with just one click.</li>
-  <li>+1 or -1 effect for every click</li>
+  <li>+1 or -1 effect for every click.</li>
 </ul>
 
 # Technologies Used
