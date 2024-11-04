@@ -11,7 +11,7 @@ body{
     height: 100vh;
 }
 
-.increse,.decrease{
+.increase,.decrease{
     position: absolute;
     height: 100vh;
     width: 50%;
@@ -23,7 +23,7 @@ body{
     
 }
 
-.decrease:active,.increse:active{
+.decrease:active,.increase:active{
     opacity: 0.35;
 }
 
@@ -33,7 +33,7 @@ body{
     line-height: 87vh;
 }
 
-.increse{
+.increase{
     right: 0;
     line-height: 100vh;
     background-color: lightgreen;

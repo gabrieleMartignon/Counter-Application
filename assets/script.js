@@ -1,28 +1,29 @@
-
-let sideIncrease = document.querySelector(".increse");
+// Selezione degli elementi del DOM
+let sideIncrease = document.querySelector(".increase");
 let sideDecrease = document.querySelector(".decrease");
-let buttonReset = document.querySelector(".reset")
+let buttonReset = document.querySelector(".reset");
 let number = document.querySelector(".number");
+let currentValue = 0;
 
+// Funzione per aggiornare il numero del contatore
+function updateCounterNumber() {
+    number.innerHTML = currentValue;
+}
 
-
-
-sideDecrease.addEventListener("pointerdown", function(event){
-    
-    number.innerHTML = +number.innerHTML - 1;
-
-    
+// Event Listener per decrementare il valore del contatore
+sideDecrease.addEventListener("pointerdown", function(event) {
+    currentValue -= 1;
+    updateCounterNumber();
 
     let addOne = document.createElement("div");
-
     addOne.classList.add("popNumber");
     addOne.innerHTML = "- 1";
-    addOne.style.left = event.pageX - 10 + "px";
-    addOne.style.top = event.pageY - 10 + "px";
-    
+    addOne.style.left = (event.pageX - 10) + "px";
+    addOne.style.top = (event.pageY - 10) + "px";
+
     document.body.append(addOne);
 
-
+    // Animazione decremento
     setTimeout(() => {
         addOne.style.transform = 'translateY(-220%)';
     }, 0);
@@ -30,23 +31,22 @@ sideDecrease.addEventListener("pointerdown", function(event){
     setTimeout(() => {
         document.body.removeChild(addOne);
     }, 1000);
-    
-})
+});
 
-sideIncrease.addEventListener("pointerdown", function(event){
-
-    number.innerHTML = +number.innerHTML + 1;
+// Event Listener per incrementare il valore del contatore
+sideIncrease.addEventListener("pointerdown", function(event) {
+    currentValue += 1;
+    updateCounterNumber();
 
     let addOne = document.createElement("div");
-
     addOne.classList.add("popNumber");
     addOne.innerHTML = "+ 1";
-    addOne.style.left = event.pageX - 10 + "px";
-    addOne.style.top = event.pageY  - 10 + "px";
-    
+    addOne.style.left = (event.pageX - 10) + "px";
+    addOne.style.top = (event.pageY - 10) + "px";
+
     document.body.append(addOne);
 
-
+    // Animazione incremento
     setTimeout(() => {
         addOne.style.transform = 'translateY(-220%)';
     }, 0);
@@ -54,12 +54,10 @@ sideIncrease.addEventListener("pointerdown", function(event){
     setTimeout(() => {
         document.body.removeChild(addOne);
     }, 1000);
-})
+});
 
-buttonReset.addEventListener("click", function (){
-    number.innerHTML = 0;
-})
-
-
-
-
+// Pulsante per resettare il valore del contatore
+buttonReset.addEventListener("click", function() {
+    currentValue = 0;
+    updateCounterNumber();
+});
