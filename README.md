@@ -22,7 +22,7 @@ Counter-Application is a simple application that allows users to keep tracking o
   <li> CSS: Styles and design for an engaging user experience.</li>
 </ul>
 
-# Contact
+# Contact me
   Email: gabrielemartignon@gmail.com  
   Linkedin: https://www.linkedin.com/in/gabrielemartignon/
   
